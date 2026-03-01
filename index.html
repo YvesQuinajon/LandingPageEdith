@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GCO Connect | Paraverse</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- navbar -->
+<header class="navbar">
+    <div class="logo">
+        <span><img src="logo-gco-connect.svg" alt="GCO Connect Logo" height="28"></span>
+    </div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Appointments</a>
+        <a href="#history">History</a>
+        <a href="#" class="btn-small">Login</a>
+    </nav>
+</header>
+
+<!-- hero -->
+<section class="hero" id="home">
+    <div class="hero-text">
+        <h1>There’s Support for Every Student</h1>
+        <p>
+            GCO Connect makes it easy to book counseling sessions,
+            psychological tests, interviews, and consultations — all in one platform.
+        </p>
+        <a href="#services" class="btn-primary">Book Appointment</a>
+    </div>
+    <div class="hero-image">
+        <img src="Cover.png" alt="Student Support">
+    </div>
+    <div class="scroll-down">
+        <a href="#services">Learn More ↓</a>
+    </div>
+</section>
+
+<!-- feature strip -->
+<section class="feature-strip">
+    <div class="strip-content">
+        <h2>Fast, Secure, and Student-Centered</h2>
+        <p>Manage appointments, track progress, and receive notifications in real time.</p>
+    </div>
+</section>
+
+<!-- infosections -->
+<section class="info-section fade-in" id="services">
+    <div class="info-image">
+        <img src="Card.png" alt="Psychological Test">
+    </div>
+    <div class="info-text">
+        <h2>Psychological Test Administration</h2>
+        <p>
+            Access validated psychological assessments designed to measure
+            academic skills, emotional intelligence, and mental well-being.
+        </p>
+        <a href="#" class="btn-outline">Learn More</a>
+    </div>
+</section>
+
+<section class="info-section reverse fade-in">
+    <div class="info-image">
+        <img src="earphones.png" alt="Counseling & Consultation">
+    </div>
+    <div class="info-text">
+        <h2>Professional Counseling & Consultation</h2>
+        <p>
+            Confidential sessions with licensed counselors
+            to help you navigate academic, personal, and emotional challenges.
+        </p>
+        <a href="#" class="btn-outline">Book Session</a>
+    </div>
+</section>
+
+<section class="info-section fade-in">
+    <div class="info-image">
+        <img src="girl.png" alt="Appointment History">
+    </div>
+    <div class="info-text">
+        <h2>Track Your Appointment History</h2>
+        <p>
+            Monitor your sessions, follow-ups, and guidance records
+            in a secure digital environment.
+        </p>
+        <a href="#" class="btn-outline">View Features</a>
+    </div>
+</section>
+
+<!-- cta -->
+<section class="cta">
+    <h2>Take the First Step Today</h2>
+    <p>Connect with the Guidance and Counseling Office through GCO Connect.</p>
+    <a href="#" class="btn-GetStarted">Get Started</a>
+</section>
+
+<!-- footer -->
+<footer>
+    © 2026 GCO Connect | Paraverse Platform
+</footer>
+
+<!-- fade in -->
+<script>
+const faders = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+    faders.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            el.classList.add('active');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
